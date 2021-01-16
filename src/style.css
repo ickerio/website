@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.icon {
+    @apply text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:text-blue-500;
+}
+
+.nav-item {
+    @apply h-full px-3 py-5 text-sm font-medium text-white transition duration-300 transform border-b-0 border-white border-opacity-0 hover:border-opacity-75;
+}

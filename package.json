@@ -1,0 +1,21 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "description": "personal website",
+  "scripts": {
+    "build": "yarn run css && yarn run js",
+    "css": "postcss src/style.css --use autoprefixer tailwindcss --dir build",
+    "js": "esbuild --bundle src/index.js --outdir=build --minify",
+    "static": "cp -rf src/!(*.css||*.js) build"
+  },
+  "repository": "git+https://github.com/ickerio/website.git",
+  "author": "Harry Ickeringill (ickerio)",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "esbuild": "^0.8.23",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  }
+}
