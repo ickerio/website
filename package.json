@@ -1,12 +1,9 @@
 {
   "name": "website",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "personal website",
   "scripts": {
-    "build": "yarn run css && yarn run js",
-    "css": "postcss src/style.css --use autoprefixer tailwindcss --dir build",
-    "js": "esbuild --bundle src/index.js --outdir=build --minify",
-    "static": "cp -rf src/!(*.css||*.js) build"
+    "build": "node build.js"
   },
   "repository": "git+https://github.com/ickerio/website.git",
   "author": "Harry Ickeringill (ickerio)",
