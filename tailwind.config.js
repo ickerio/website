@@ -1,5 +1,6 @@
 module.exports = {
   purge: {
+    enabled: true,
     preserveHtmlElements: false,
     content: ['./src/**/*.html'],
   },
