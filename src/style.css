@@ -7,5 +7,5 @@
 }
 
 .nav-item {
-    @apply h-full px-3 py-5 text-sm font-medium text-white transition duration-300 transform border-b-0 border-white border-opacity-0 hover:border-opacity-75;
+    @apply h-full px-3 py-5 text-sm font-medium text-white transition duration-300 transform border-b-2 border-white border-opacity-0 hover:border-opacity-75;
 }
